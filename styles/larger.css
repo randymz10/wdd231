@@ -1,0 +1,15 @@
+@import url(small.css);
+
+@media screen and (min-width: 992px) {
+  .menu-navbar {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar-item {
+    padding: 16px;
+  }
+}
