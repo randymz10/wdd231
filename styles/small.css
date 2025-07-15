@@ -159,6 +159,12 @@
   border-radius: 5px;
 }
 
+.credits {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
 .footer {
   background-color: var(--primary);
   color: var(--text-light);

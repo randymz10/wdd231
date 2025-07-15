@@ -70,9 +70,11 @@
 
   // HMTL elements
   const coursesHtml = document.querySelector("#courses");
+  const creditsHtml = document.querySelector("#credits");
   const allBtn = document.querySelector("#all");
   const cseBtn = document.querySelector("#cse");
   const wddBtn = document.querySelector("#wdd");
+  let totalCredits = 0;
 
   //Functions Helpers
   function filterCourses(option = "all") {
@@ -91,28 +93,34 @@
     return courseHtml;
   }
 
-  function insertElements(option = "all") {
-    filterCourses(option).map((course) => {
-      coursesHtml.appendChild(createHtmlElement(course));
-    });
+  function updateElements(option = "all") {
+    totalCredits = filterCourses(option)
+      .map((course) => {
+        coursesHtml.appendChild(createHtmlElement(course));
+        return course.credits;
+      })
+      .reduce((totalCredits, credits) => totalCredits + credits, 0);
+
+    creditsHtml.innerHTML = `The total credits for course listed above is: ${totalCredits}`;
   }
 
   // Bussiness logic
-  insertElements();
+
+  updateElements();
 
   // Listeners
   allBtn.addEventListener("click", () => {
     coursesHtml.innerHTML = "";
-    insertElements("all");
+    updateElements("all");
   });
 
   cseBtn.addEventListener("click", () => {
     coursesHtml.innerHTML = "";
-    insertElements("cse");
+    updateElements("cse");
   });
 
   wddBtn.addEventListener("click", () => {
     coursesHtml.innerHTML = "";
-    insertElements("wdd");
+    updateElements("wdd");
   });
 })();
