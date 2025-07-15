@@ -17,7 +17,7 @@
     <title>Document</title>
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js"></script>
+    <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
   </head>
   <body>
@@ -46,22 +46,39 @@
       <h1>Home</h1>
       <section class="card">
         <h2 class="card-title">About me</h2>
-        <p class="card-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-          voluptate temporibus recusandae possimus velit nihil ipsam eligendi
-          eveniet animi eum, nam, cupiditate fugit repellat, provident qui quam.
-          Error, hic doloribus!
-        </p>
+        <section class="card-body">
+          <p>
+            Web developer based in Londrina/PR, Brazil for 2+ years mainly
+            focused in low-code development with Mendix building web and mobile
+            apps.
+          </p>
+          <p>
+            Currently I studying in BYU Idaho a bachelor degree in Sofware
+            Development and I have the Mendix Advanced Developer Certification.
+          </p>
+          <p>
+            In my spare time I enjoy spending time with my wife, watching series
+            and movies, playing video games, studying web development and
+            working on my own projects.
+          </p>
+        </section>
       </section>
       <section class="card">
         <h2 class="card-title">Student Photo</h2>
         <div class="card-image">
-          <img src="https://placehold.co/250" alt="Profile picture" />
+          <img src="images/student-photo.webp" alt="Profile picture" />
         </div>
       </section>
       <section class="card">
         <h2 class="card-title">Web Certificate Courses</h2>
-        <div id="courses" class="card-body"></div>
+        <div class="card-body">
+          <div class="btn-group">
+            <button class="btn" id="all">All</button>
+            <button class="btn" id="cse">CSE</button>
+            <button class="btn" id="wdd">WDD</button>
+          </div>
+          <div id="courses"></div>
+        </div>
       </section>
     </main>
     <footer class="footer">

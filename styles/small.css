@@ -124,6 +124,39 @@
 
 .card-image > img {
   border-radius: 5px;
+  width: 250px;
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.btn {
+  border: inherit;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border-radius: 5px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.list-item {
+  display: block;
+  padding: 10px 0;
+  margin: 5px 0;
+  background-color: var(--secondary);
+  color: var(--text-light);
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
 }
 
 .footer {
@@ -134,17 +167,17 @@
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
 .footer > .social-media {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .social-media a {
-    margin: 0 8px;
+  margin: 0 8px;
 }
 
 #lastModified {
-    margin: 8px 0 0 0;
+  margin: 8px 0 0 0;
 }
