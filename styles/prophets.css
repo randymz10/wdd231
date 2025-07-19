@@ -1,0 +1,36 @@
+:root {
+  --primary: #3674b5;
+  --secondary: #578fca;
+  --accent1: #f5f0cd;
+  --accent2: #fada7a;
+  --text-light: #f8f8f8;
+}
+
+h1,
+footer,
+#cards {
+  text-align: center;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: var(--primary);
+}
+
+#cards,
+#cards > section,
+#cards > section > img {
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#cards > section {
+  margin: 8px;
+  padding: 16px;
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
+
+footer {
+  padding: 24px 0;
+}
