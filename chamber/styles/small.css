@@ -203,6 +203,9 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   background-color: var(--primary);
   color: var(--text-light);
   text-align: center;
@@ -210,7 +213,8 @@
 }
 
 .footer p {
-  margin: 0;
+  margin: 5px;
+  text-align: start;
 }
 
 .footer > .social-media {
@@ -221,6 +225,6 @@
   margin: 0 8px;
 }
 
-#lastModified {
+/* #lastModified {
   margin: 8px 0 0 0;
-}
+} */

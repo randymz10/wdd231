@@ -23,12 +23,13 @@
     />
 
     <!-- Styleshets -->
+     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
-
+    <script src="scripts/date.js" defer></script>
     <!-- Title -->
     <title>Directory | Chamber of commerce</title>
   </head>
@@ -51,30 +52,44 @@
     </header>
     <nav class="navbar" id="navbar">
       <a class="navbar-item" href="#">Home</a>
-      <a class="navbar-item" href="#">Chamber Project</a>
+      <a class="navbar-item" href="#">Directory</a>
       <a class="navbar-item" href="#">Final Project</a>
     </nav>
     <main>
-        <section class="hero">
-            <h2 class="title">Empowering Business. Strengthening Community.</h2>
-            <h3 class="subtitle">
-                Join the heartbeat of local enterprise. Discover resources, advocacy,
-                and connections that fuel growth.
-            </h3>
-            <div class="hero-footer">
-                <button class="btn btn-secondary">Become a member</button>
-            </div>
-        </section>
-        <h1>Home</h1>
-      <section class="info">
-        
-      </section>
+      <h1>Directory</h1>
+
       <section class="cards"></section>
     </main>
-    <footer>
-      <section></section>
-      <section></section>
-      <section></section>
+    <footer class="footer">
+      <section>
+        <p><strong>Randy Muñoz Chamber of Commerce</strong></p>
+        <p>Av Camilly Fernandes Rodrigues 1020</p>
+        <p>Londrina/PR, Brasil</p>
+        <p>info@randy-chamber.comm</p>
+        <p>+55 3 3221 1122</p>
+      </section>
+      <section>
+        <div class="social-media">
+          <a href="https://linkedin.com/in/randymz10">
+            <img src="images/linkedin-icon.svg" alt="Linkedin icon" />
+          </a>
+          <a href="https://github.com/randymz10">
+            <img src="images/github-icon.svg" alt="Github icon" />
+          </a>
+          <a href="https://instagram.com/randymz10"
+            ><img src="images/instagram-icon.svg" alt="Instagram icon" />
+          </a>
+        </>
+        <p></p>
+      </section>
+      <section>
+        <p>WDD2341 Class Project</p>
+        <p>Randy Muñoz</p>
+        <p>
+          &copy; <span id="currentyear"></span> Randy Muñoz Chamber of Commerce
+        </p>
+        <p id="lastModified"></p>
+      </section>
     </footer>
   </body>
 </html>
