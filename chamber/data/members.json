@@ -14,7 +14,7 @@
     "address": "R. Harmonia 450, Londrina, PR",
     "phone": "+55 43 3322-4455",
     "website": "www.verdanza.com.br",
-    "icon_filename": "verdanza_icon.jpg",
+    "icon_filename": "verdanza_logo.png",
     "membership_level": 2,
     "category": "Hospitality",
     "founded": 2009
@@ -24,7 +24,7 @@
     "address": "Av. do Progresso 810, Curitiba, PR",
     "phone": "+55 41 9988-7711",
     "website": "www.solaraeco.com",
-    "icon_filename": "solara_icon.svg",
+    "icon_filename": "solara_logo.png",
     "membership_level": 3,
     "category": "Sustainability",
     "founded": 2013
@@ -44,7 +44,7 @@
     "address": "R. Computação 200, Campinas, SP",
     "phone": "+55 19 3782-1000",
     "website": "www.quantixlabs.com.br",
-    "icon_filename": "quantix_icon.png",
+    "icon_filename": "quantix_logo.png",
     "membership_level": 2,
     "category": "Biotechnology",
     "founded": 2015
@@ -54,7 +54,7 @@
     "address": "Rod. Transbrasiliana Km 12, Goiânia, GO",
     "phone": "+55 62 3655-4400",
     "website": "www.atlasmotors.com",
-    "icon_filename": "atlas_logo.svg",
+    "icon_filename": "atlas_logo.png",
     "membership_level": 3,
     "category": "Automotive",
     "founded": 2005
@@ -64,7 +64,7 @@
     "address": "Rua Criativa 77, Florianópolis, SC",
     "phone": "+55 48 3232-0099",
     "website": "www.pixelneststudio.com",
-    "icon_filename": "pixelnest_icon.jpg",
+    "icon_filename": "pixelnest_logo.png",
     "membership_level": 1,
     "category": "Design",
     "founded": 2018
