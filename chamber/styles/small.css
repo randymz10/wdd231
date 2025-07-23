@@ -124,6 +124,8 @@
 }
 
 .card {
+  max-width: 400px;
+  min-width: 300px;
   margin: 20px auto;
   background-color: var(--accent2);
   border-radius: 5px;
@@ -142,6 +144,11 @@
 .card-body {
   padding: 8px;
   padding-bottom: 24px;
+  text-align: center;
+}
+
+.card-body > p {
+  margin: 5px 0;
 }
 
 .card-image {
