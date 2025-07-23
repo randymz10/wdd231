@@ -40,6 +40,7 @@ const displayCompanies = (companies) => {
     }
 
     logo.src = `images/companies/${company.icon_filename}`;
+    logo.alt = `logo image of ${company.name}`;
     logo.loading = "lazy";
     logo.width = "250";
     logo.height = "250";
