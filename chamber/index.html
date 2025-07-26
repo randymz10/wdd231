@@ -30,7 +30,7 @@
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/wheater.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <!-- Title -->
     <title>Homepage | Chamber of commerce</title>
@@ -83,21 +83,10 @@
         <div class="card">
           <h2 class="card-title">Curent Weather</h2>
           <div class="card-body" id="weather">
-            <div>
-              <img
-                src="https://placehold.co/150"
-                alt="Image of the current weather"
-              />
+            <div ">
+              <img id="weather-icon" />
             </div>
-            <div>
-              <p><b>75</b> F</p>
-              <p>Party Cloudy</p>
-              <p>High: 85</p>
-              <p>Low: 52</p>
-              <p>Humidity: 34%</p>
-              <p>Sunrise: 7:30am</p>
-              <p>Sunset: 9:59pm</p>
-            </div>
+            <div id="weather-info"></div>
           </div>
         </div>
         <div class="card">
