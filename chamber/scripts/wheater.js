@@ -16,44 +16,46 @@ async function apiFetch() {
 
     if (weatherResponse.ok) {
       weatherData = await weatherResponse.json();
-      console.log(weatherData);
     } else {
       throw Error(weatherResponse.text());
     }
 
-    if (weatherResponse.ok) {
-      weatherData = await weatherResponse.json();
-      console.log(weatherData);
-      displayResults(weatherData);
+    if (forecastResponse.ok) {
+      forecastData = await forecastResponse.json();
     } else {
-      throw Error(weatherResponse.text());
+      throw Error(forecastResponse.text());
     }
 
-    displayResults(weatherData);
+    displayResults(weatherData, forecastData);
   } catch (error) {
     console.error(error);
   }
 }
 
-function displayResults(data) {
+function displayResults(weatherData, forecastData) {
   weatherInfo.innerHTML = /*html*/ `
-    <p><b>${data.main.temp}&deg;</b> C</p>
-    <p>${data.weather[0].main}</p>
-    <p>High: ${data.main.temp_max}</p>
-    <p>Low: ${data.main.temp_min}</p>
-    <p>Humidity: ${data.main.humidity}%</p>
-    <p>Sunrise: ${formatDatetime(data.sys.sunrise)}</p>
-    <p>Sunset: ${formatDatetime(data.sys.sunset)}</p>
+    <p><b>${weatherData.main.temp}&deg;</b> C</p>
+    <p>${weatherData.weather[0].main}</p>
+    <p>High: ${weatherData.main.temp_max}</p>
+    <p>Low: ${weatherData.main.temp_min}</p>
+    <p>Humidity: ${weatherData.main.humidity}%</p>
+    <p>Sunrise: ${formatDatetime(weatherData.sys.sunrise)}</p>
+    <p>Sunset: ${formatDatetime(weatherData.sys.sunset)}</p>
   `;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  let desc = weatherData.weather[0].description;
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
 
   forecast.innerHTML = /*html */ `
-    <p>Today: <b>${data.main.temp}&deg; C</b> </p>
-    <p><b></b></p>
-    <p><b></b></p>
+
+    <p>Today: <b>${forecastData.list[0].main.temp}&deg; C</b></p>
+    <p>${formatDate(forecastData.list[1].dt)}: <b>${
+    forecastData.list[0].main.temp
+  }&deg; C</b></p>
+    <p>${formatDate(forecastData.list[7].dt)}: <b>${
+    forecastData.list[7].main.temp
+  }&deg; C</b></p>
   `;
 }
 
@@ -66,6 +68,12 @@ function formatDatetime(datetime) {
   });
 
   return timeString;
+}
+
+function formatDate(date) {
+  const weekday = new Date(date * 1000);
+  const dateString = weekday.toLocaleDateString("en-US", { weekday: "long" });
+  return dateString;
 }
 
 apiFetch();
