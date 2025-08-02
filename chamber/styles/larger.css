@@ -45,4 +45,17 @@
     background-color: var(--secondary);
     color: var(--text-light);
   }
+
+  .container {
+    display: flex;
+    
+  }
+
+  .form-container {
+    margin: 0;
+  }
+
+  .levels {
+    width: 50%;
+  }
 }

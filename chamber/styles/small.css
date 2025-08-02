@@ -281,3 +281,24 @@
 /* #lastModified {
   margin: 8px 0 0 0;
 } */
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem 0;
+}
+
+.level-card {
+  background-color: var(--accent2);
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid var(--accent1);
+  text-align: center;
+}

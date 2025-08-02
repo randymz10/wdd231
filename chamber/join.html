@@ -16,7 +16,7 @@
     />
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <title>Join</title>
+    <title>Join | Chamber of commerce</title>
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -41,59 +41,90 @@
     </header>
     <nav class="navbar" id="navbar">
       <a class="navbar-item" href="index.html">Home</a>
-      <a class="navbar-item" href="chamber/index.html">Chamber Project</a>
-      <a class="navbar-item" href="#">Final Project</a>
+      <a class="navbar-item" href="directory.html">Directory</a>
+      <a class="navbar-item" href="join.html">Join</a>
+      <a class="navbar-item" href="#">Discover</a>
     </nav>
 
     <main>
-      <form action="thankyou.html">
-        <div>
-          <label for="firstName">First Name</label>
-          <input type="text" name="firstName" id="firstName" required />
-        </div>
-        <div>
-          <label for="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" required />
-        </div>
-        <div>
-          <label for="organizationTitle">Organization Title</label>
-          <input
-            type="text"
-            name="organizationTitle"
-            id="organizationTitle"
-            autocomplete="organization Title"
-            required
-          />
-        </div>
-        <div>
-          <label for="email">Email</label
-          ><input type="email" name="email" id="email" required />
-        </div>
-        <div>
-          <label for="phone">Phone number</label
-          ><input type="tel" name="phone" id="phone" required />
-        </div>
-        <div>
-          <label for="bName">Bussiness name</label
-          ><input type="text" name="bName" id="bName" />
-        </div>
-        <div>
-          <label for="membershipLevel">Membership level</label>
-          <select name="membershipLevel" id="membershipLevel">
-            <option value="" selected>Select a option</option>
-            <option value="1">NP Membershio</option>
-            <option value="2">Bronze Membership</option>
-            <option value="3">Silver Membership</option>
-            <option value="4">Gold Memebership</option>
-          </select>
-        </div>
-        <div>
-          <label for="description">Description</label>
-          <textarea name="description" id="description" cols="30"></textarea>
-        </div>
-        <input type="hidden" name="timestamp" id="timestamp" />
-        <input type="submit" value="Send" />
-      </form>
+      <h1>Join with us!</h1>
+      <section class="container">
+        <section class="form-container">
+          <h2>Membership Application Form</h2>
+          <form method="get" action="thankyou.html">
+            <div class="form-control">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div class="form-control">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" required />
+            </div>
+            <div class="form-control">
+              <label for="organizationTitle">Organization Title</label>
+              <input
+                type="text"
+                name="organizationTitle"
+                id="organizationTitle"
+                autocomplete="organization Title"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label
+              ><input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-control">
+              <label for="phone">Phone number</label
+              ><input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="form-control">
+              <label for="bName">Bussiness name</label
+              ><input type="text" name="bName" id="bName" />
+            </div>
+            <div class="form-control">
+              <label for="membershipLevel">Membership level</label>
+              <select name="membershipLevel" id="membershipLevel">
+                <option value="" selected>Select a option</option>
+                <option value="1">NP Membershio</option>
+                <option value="2">Bronze Membership</option>
+                <option value="3">Silver Membership</option>
+                <option value="4">Gold Memebership</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </div>
+            <input type="hidden" name="timestamp" id="timestamp" />
+            <input type="submit" value="Send" class="btn btn-secondary" />
+          </form>
+        </section>
+        <section class="levels">
+          <h2>Membership Levels</h2>
+          <div class="level-card">
+            <h3>Non Profit Membership Level</h3>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="level-card">
+            <h3>Bronze Membership Level</h3>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="level-card">
+            <h3>Silver Membership Level</h3>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="level-card">
+            <h3>Gold Membership Level</h3>
+            <button class="btn">Learn More</button>
+          </div>
+        </section>
+      </section>
     </main>
 
     <footer class="footer">
