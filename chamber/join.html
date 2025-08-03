@@ -19,7 +19,7 @@
     <title>Join | Chamber of commerce</title>
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
     <script src="scripts/date.js" defer></script>
   </head>
   <body>
@@ -51,6 +51,9 @@
       <section class="container">
         <section class="form-container">
           <h2>Membership Application Form</h2>
+
+          <!--Form-->
+
           <form method="get" action="thankyou.html">
             <div class="form-control">
               <label for="firstName">First Name</label>
@@ -105,23 +108,91 @@
             <input type="submit" value="Send" class="btn btn-secondary" />
           </form>
         </section>
+
+        <!--Memebershio levels-->
+
         <section class="levels">
           <h2>Membership Levels</h2>
+
           <div class="level-card">
             <h3>Non Profit Membership Level</h3>
-            <button class="btn">Learn More</button>
+            <button class="btn" id="nonProfitButton">Learn More</button>
+            <dialog class="modal" id="nonProfitModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Non Profit Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
           </div>
           <div class="level-card">
             <h3>Bronze Membership Level</h3>
-            <button class="btn">Learn More</button>
+            <button class="btn" id="bronzeButton">Learn More</button>
+            <dialog class="modal" id="bronzeModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Bronze Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
           </div>
           <div class="level-card">
             <h3>Silver Membership Level</h3>
-            <button class="btn">Learn More</button>
+            <button class="btn" id="silverButton">Learn More</button>
+            <dialog class="modal" id="silverModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Silver Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
           </div>
           <div class="level-card">
             <h3>Gold Membership Level</h3>
-            <button class="btn">Learn More</button>
+            <button class="btn" id="goldButton">Learn More</button>
+            <dialog class="modal" id="goldModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Non Profit Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
           </div>
         </section>
       </section>

@@ -48,14 +48,17 @@
 
   .container {
     display: flex;
-    
   }
 
   .form-container {
-    margin: 0;
+    flex: 1;
   }
 
   .levels {
-    width: 50%;
+    flex: 1;
+  }
+
+  .modal {
+    max-width: 800px;
   }
 }
