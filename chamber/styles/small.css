@@ -325,6 +325,11 @@
   border: transparent;
 }
 
+.info-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
