@@ -3,7 +3,7 @@ const url = "https://randymz10.github.io/wdd231/chamber/data/members.json";
 const bCards = document.querySelector(".bcards");
 let bcardsStrings = "";
 
-bCards.html
+bCards.html;
 
 async function getbCardsData() {
   const response = await fetch(url);
