@@ -1,0 +1,99 @@
+:root {
+    --text-light: #fff;
+    --text-muted: #555;
+}
+
+
+* {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--accent2);
+  padding: 10px;
+  align-items: center;
+}
+
+.menu-brand {
+  display: flex;
+  align-items: center;
+}
+
+.menu-brand img {
+  width: 48px;
+}
+
+.menu-brand span {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.menu-navbar {
+  align-self: flex-end;
+}
+
+.menu-navbar button {
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.menu-navbar button:hover {
+  background-color: var(--primary);
+}
+
+.navbar {
+  display: none;
+  background-color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar-item {
+  text-decoration: none;
+  /* color: var(--text-light); */
+  padding: 12px 0;
+  border-bottom: 1px solid var(--secondary);
+  font-weight: 600;
+}
+
+.navbar > :nth-child(1) {
+  border-top: 1px solid var(--secondary);
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  background-color: var(--secondary);
+  transition: 300ms;
+}
+
+.navbar-item.active {
+  background-color: var(--secondary);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-title {
+  text-align: center;
+}
+
+.intro-subtitle {
+    color: var(--text-muted);
+}
+
+.footer {
+  text-align: center;
+}
