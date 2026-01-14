@@ -3,7 +3,7 @@
   main,
   nav,
   footer {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -22,10 +22,41 @@
 
   .navigation ul {
     display: flex;
-    justify-content: space-around;
   }
 
-  .navigation a{
+  .navigation a {
     border: none;
+  }
+
+  h1 {
+    grid-area: top-area;
+  }
+
+  .container > .card:first-child {
+    grid-area: left-area;
+  }
+
+  .container > .card:nth-of-type(2) {
+    grid-area: right-area;
+  }
+
+  .container > .card:nth-of-type(3) {
+    grid-area: bottom-area;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "top-area top-area top-area"
+      "left-area left-area right-area"
+      "bottom-area bottom-area bottom-area";
+    column-gap: 10px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
   }
 }

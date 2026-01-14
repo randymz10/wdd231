@@ -1,10 +1,7 @@
-const navButton = document.querySelector("#ham-btn");
+const navButton = document.querySelector("#hamburger-button");
 const navBar = document.querySelector("#nav-bar");
 
 navButton.addEventListener("click", () => {
   navButton.classList.toggle("show");
   navBar.classList.toggle("show");
 });
-
-
-const daysUntil = `There are ${daycount} days until ${targetEvent}!`;
