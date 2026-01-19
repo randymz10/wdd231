@@ -1,5 +1,5 @@
-// const url = "https://randymz10.github.io/wdd231/chamber/data/members.json";
-const url = "http://127.0.0.1:5500/chamber/data/members.json";
+const url = "https://randymz10.github.io/wdd231/chamber/data/members.json";
+// const url = "http://127.0.0.1:5500/chamber/data/members.json";
 
 const cards = document.querySelector("#cards");
 
