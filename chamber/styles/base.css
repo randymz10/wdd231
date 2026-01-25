@@ -98,6 +98,29 @@ header span {
   color: var(--color-primary-content);
 }
 
+/******************** HERO ***************/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1.5rem;
+  background-color: var(--color-secondary);
+  height: 12rem;
+}
+
+.hero {
+  .title,
+  .subtitle {
+    color: var(--color-secondary-content);
+  }
+}
+
+.hero-footer {
+  align-self: center;
+}
+
 /******************* FOOTER ***************/
 
 .footer {
@@ -148,12 +171,14 @@ header span {
 
 /*************COMPONENTS****************/
 
-.card {
+.card,
+.bcard {
   margin: 20px auto;
   background-color: var(--color-base-100);
   border-radius: var(--radius-box);
   /* padding-bottom: 8px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
@@ -165,7 +190,8 @@ header span {
   font-size: 24px;
 }
 
-.card-body {
+.card-body,
+.bcard-body {
   padding: 8px;
   padding-bottom: 24px;
   background-color: var(--color-base-100);
@@ -181,4 +207,60 @@ header span {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.bcard {
+  border-radius: 8px;
+}
+
+.bcard-header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--color-accent);
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px;
+}
+
+.bcard-title,
+.bcard-subtitle {
+  margin: 0 0 5px 0;
+  color: var(--color-accent-content);
+}
+
+.bcard-body {
+  display: flex;
+  border-top: 1px solid var(--color-secondary);
+}
+
+.bcard-body > div {
+  margin-left: 15px;
+  text-align: start;
+}
+
+.bcard-img {
+  border-radius: 5px;
+}
+
+.btn {
+  border: inherit;
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  border-radius: 5px;
+  padding: 12px 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: color-mix(in srgb, var(--color-primary), black 20%);
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--color-secondary), black 20%);
+  color: var(--color-secondary-content);
 }

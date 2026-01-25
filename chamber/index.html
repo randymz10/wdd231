@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <meta name="author" content="Randy Mujñoz" />
+
+    <!--SOCIAL MEDIA TAGS-->
+
+    <meta property="og:title" content="Directory | Chamber of commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://randymz10.github.io/wdd231/chamber/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <!--STYLESHETS-->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--SCRIPTS-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/wheater.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/bcards.js" defer></script>
+
+    <title>Home | Chamber of commerce</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="images/logo.svg" alt="Site logo" width="512" height="512" />
+      <span>Randy's chamber of commerce </span>
+      <button id="hamburger-button" class="hamburguer"></button>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+    <!--MAIN CONTENT-->
+<main>
+      <section class="hero">
+        <h2 class="title">Empowering Business. Strengthening Community.</h2>
+        <h3 class="subtitle">
+          Join the heartbeat of local enterprise. Discover resources, advocacy,
+          and connections that fuel growth.
+        </h3>
+        <div class="hero-footer">
+          <button class="btn btn-primary">Become a member</button>
+        </div>
+      </section>
+      <h1>Home</h1>
+      <section class="info">
+        <div class="card">
+          <h2 class="card-title">Events</h2>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            quaerat quia dolorum, assumenda laboriosam quisquam dolor obcaecati
+            consequatur repellendus eos pariatur dolore fuga dolorem rerum
+            asperiores eaque nemo ea eligendi.
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Curent Weather</h2>
+          <div class="card-body" id="weather">
+            <div ">
+              <img id="weather-icon" />
+            </div>
+            <div id="weather-info"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Weather Forecast</h2>
+          <div class="card-body" id="forecast"></div>
+        </div>
+      </section>
+      <section class="bcards">
+        <section class="bcard">
+          <div class="bcard-header">
+            <h2 class="bcard-title">Bussine Name</h2>
+            <p class="bcard-subtitle">Bussines tag line</p>
+          </div>
+          <div class="bcard-body">
+            <img src="https://placehold.co/150" alt="Bussines image portrait" />
+            <div>
+              <p><b>EMAIL:</b> info@mail.com</p>
+              <p><b>PHONE:</b> 8000-555-1234</p>
+              <p><b>URL:</b> mybussine.com</p>
+            </div>
+          </div>
+        </section>
+        <section class="bcard">
+          <div class="bcard-header">
+            <h2 class="bcard-title">Bussine Name</h2>
+            <p class="bcard-subtitle">Bussines tag line</p>
+          </div>
+          <div class="bcard-body">
+            <img src="https://placehold.co/150" alt="Bussines image portrait" />
+            <div>
+              <p><b>EMAIL:</b> info@mail.com</p>
+              <p><b>PHONE:</b> 8000-555-1234</p>
+              <p><b>URL:</b> mybussines.com</p>
+            </div>
+          </div>
+        </section>
+        <section class="bcard">
+          <div class="bcard-header">
+            <h2 class="bcard-title">Bussine Name</h2>
+            <p class="bcard-subtitle">Bussines tag line</p>
+          </div>
+          <div class="bcard-body">
+            <img
+              src="https://placehold.co/150"
+              alt="Bussines image portrait"
+              class="bcard-img"
+            />
+            <div>
+              <p><b>EMAIL:</b> info@mail.com</p>
+              <p><b>PHONE:</b> 8000-555-1234</p>
+              <p><b>URL:</b> mybussine.com</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <section>
+        <p><strong>Randy Muñoz Chamber of Commerce</strong></p>
+        <p>Av Camilly Fernandes Rodrigues 1020</p>
+        <p>Londrina/PR, Brasil</p>
+        <p>info@randy-chamber.comm</p>
+        <p>+55 3 3221 1122</p>
+      </section>
+      <section>
+        <div class="social">
+          <a href="https://linkedin.com/in/randymz10">
+            <img src="images/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a href="https://github.com/randymz10">
+            <img src="images/github.svg" alt="Github icon" />
+          </a>
+          <a href="https://instagram.com/randymz10"
+            ><img src="images/instagram.svg" alt="Instagram icon" />
+          </a>
+        </div>
+        <p></p>
+      </section>
+      <section>
+        <p>WDD2341 Class Project</p>
+        <p>Randy Muñoz</p>
+        <p>
+          &copy; <span id="currentyear"></span> Randy Muñoz Chamber of Commerce
+        </p>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
