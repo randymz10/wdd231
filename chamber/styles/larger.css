@@ -52,4 +52,20 @@
   .bcard {
     margin: 0 1rem 2rem 0;
   }
+
+  .container {
+    display: flex;
+  }
+
+  .form-container {
+    flex: 1;
+  }
+
+  .levels {
+    flex: 1;
+  }
+
+  .modal {
+    max-width: 800px;
+  }
 }

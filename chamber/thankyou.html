@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <meta name="author" content="Randy Mujñoz" />
+
+    <!--SOCIAL MEDIA TAGS-->
+
+    <meta property="og:title" content="Directory | Chamber of commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://randymz10.github.io/wdd231/chamber/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <!--STYLESHETS-->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--SCRIPTS-->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/formparams.js" defer></script>
+
+    <title>Directory | Chamber of commerce</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="images/logo.svg" alt="Site logo" width="512" height="512" />
+      <span>Randy's chamber of commerce </span>
+      <button id="hamburger-button" class="hamburguer"></button>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+    <!--MAIN CONTENT-->
+    <main>
+      <section class="info-container">
+        <h1>Thank you!</h1>
+        <div>
+          <h2>Fullname</h2>
+          <p id="fullname"></p>
+        </div>
+        <div>
+          <h2>Organization Title</h2>
+          <p id="organizationTitle"></p>
+        </div>
+        <div>
+          <h2>Email</h2>
+          <p id="email"></p>
+        </div>
+        <div>
+          <h2>Phone</h2>
+          <p id="phone"></p>
+        </div>
+        <div>
+          <h2>Bussine Name</h2>
+          <p id="bName"></p>
+        </div>
+        <div>
+          <h2>Membership Level</h2>
+          <p id="membershipLevel"></p>
+        </div>
+        <div>
+          <h2>Description</h2>
+          <p id="description"></p>
+        </div>
+        <div>
+          <h2>Timestamp</h2>
+          <p id="timestamp"></p>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <section>
+        <p><strong>Randy Muñoz Chamber of Commerce</strong></p>
+        <p>Av Camilly Fernandes Rodrigues 1020</p>
+        <p>Londrina/PR, Brasil</p>
+        <p>info@randy-chamber.comm</p>
+        <p>+55 3 3221 1122</p>
+      </section>
+      <section>
+        <div class="social">
+          <a href="https://linkedin.com/in/randymz10">
+            <img src="images/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a href="https://github.com/randymz10">
+            <img src="images/github.svg" alt="Github icon" />
+          </a>
+          <a href="https://instagram.com/randymz10"
+            ><img src="images/instagram.svg" alt="Instagram icon" />
+          </a>
+        </div>
+        <p></p>
+      </section>
+      <section>
+        <p>WDD2341 Class Project</p>
+        <p>Randy Muñoz</p>
+        <p>
+          &copy; <span id="currentyear"></span> Randy Muñoz Chamber of Commerce
+        </p>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>

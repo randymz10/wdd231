@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <meta name="author" content="Randy Mujñoz" />
+
+    <!--SOCIAL MEDIA TAGS-->
+
+    <meta property="og:title" content="Directory | Chamber of commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://randymz10.github.io/wdd231/chamber/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <!--STYLESHETS-->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--SCRIPTS-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <title>Home | Chamber of commerce</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="images/logo.svg" alt="Site logo" width="512" height="512" />
+      <span>Randy's chamber of commerce </span>
+      <button id="hamburger-button" class="hamburguer"></button>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+    <!--MAIN CONTENT-->
+
+    <main>
+      <h1>Join with us!</h1>
+      <section class="container">
+        <section class="form-container">
+          <h2>Membership Application Form</h2>
+
+          <!--Form-->
+
+          <form method="get" action="thankyou.html">
+            <div class="form-control">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div class="form-control">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" required />
+            </div>
+            <div class="form-control">
+              <label for="organizationTitle">Organization Title</label>
+              <input
+                type="text"
+                name="organizationTitle"
+                id="organizationTitle"
+                autocomplete="organization Title"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label
+              ><input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-control">
+              <label for="phone">Phone number</label
+              ><input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="form-control">
+              <label for="bName">Bussiness name</label
+              ><input type="text" name="bName" id="bName" />
+            </div>
+            <div class="form-control">
+              <label for="membershipLevel">Membership level</label>
+              <select name="membershipLevel" id="membershipLevel">
+                <option value="" selected>Select a option</option>
+                <option value="1">NP Membershio</option>
+                <option value="2">Bronze Membership</option>
+                <option value="3">Silver Membership</option>
+                <option value="4">Gold Memebership</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </div>
+            <input type="hidden" name="timestamp" id="timestamp" />
+            <input type="submit" value="Send" class="btn btn-secondary" />
+          </form>
+        </section>
+
+        <!--Memebershio levels-->
+
+        <section class="levels">
+          <h2>Membership Levels</h2>
+
+          <div class="level-card">
+            <h3>Non Profit Membership Level</h3>
+            <button class="btn btn-secondary" id="nonProfitButton">Learn More</button>
+            <dialog class="modal" id="nonProfitModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Non Profit Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
+          </div>
+          <div class="level-card">
+            <h3>Bronze Membership Level</h3>
+            <button class="btn btn-secondary" id="bronzeButton">Learn More</button>
+            <dialog class="modal" id="bronzeModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Bronze Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
+          </div>
+          <div class="level-card">
+            <h3>Silver Membership Level</h3>
+            <button class="btn btn-secondary" id="silverButton">Learn More</button>
+            <dialog class="modal" id="silverModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Silver Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
+          </div>
+          <div class="level-card">
+            <h3>Gold Membership Level</h3>
+            <button class="btn btn-secondary" id="goldButton">Learn More</button>
+            <dialog class="modal" id="goldModal">
+              <div class="modalContainer">
+                <button class="btn closeBtn">❌</button>
+                <h3>Non Profit Membership Level</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </dialog>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <section>
+        <p><strong>Randy Muñoz Chamber of Commerce</strong></p>
+        <p>Av Camilly Fernandes Rodrigues 1020</p>
+        <p>Londrina/PR, Brasil</p>
+        <p>info@randy-chamber.comm</p>
+        <p>+55 3 3221 1122</p>
+      </section>
+      <section>
+        <div class="social">
+          <a href="https://linkedin.com/in/randymz10">
+            <img src="images/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a href="https://github.com/randymz10">
+            <img src="images/github.svg" alt="Github icon" />
+          </a>
+          <a href="https://instagram.com/randymz10"
+            ><img src="images/instagram.svg" alt="Instagram icon" />
+          </a>
+        </div>
+        <p></p>
+      </section>
+      <section>
+        <p>WDD2341 Class Project</p>
+        <p>Randy Muñoz</p>
+        <p>
+          &copy; <span id="currentyear"></span> Randy Muñoz Chamber of Commerce
+        </p>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
