@@ -27,6 +27,7 @@
       property="og:description"
       content="Join the Chamber of Commerce to access networking opportunities, business resources, advocacy, and community visibility. Apply online and grow with us."
     >
+    
     <!--STYLESHETS-->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/colors.css" />
@@ -87,6 +88,7 @@
                 id="firstName"
                 required
                 autocomplete="given-name"
+                title="firstName"
               />
             </div>
             <div class="form-control">
@@ -97,6 +99,7 @@
                 id="lastName"
                 required
                 autocomplete="family-name"
+                title="lastName"
               />
             </div>
             <div class="form-control">
@@ -105,17 +108,32 @@
                 type="text"
                 name="organizationTitle"
                 id="organizationTitle"
-                autocomplete="organization Title"
+                autocomplete="organization-title"
                 required
               />
             </div>
             <div class="form-control">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" required placeholder="e.g., name@example.com" autocomplete="name@example.com" title="email"/>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="e.g., name@example.com"
+                autocomplete="email"
+                title="email"
+              />
             </div>
             <div class="form-control">
               <label for="phone">Phone number</label
-              ><input type="tel" name="phone" id="phone" required autocomplete="tel" title="tel"/>
+              ><input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                autocomplete="tel"
+                title="tel"
+              />
             </div>
             <div class="form-control">
               <label for="bName">Bussiness name</label
@@ -123,7 +141,11 @@
             </div>
             <div class="form-control">
               <label for="membershipLevel">Membership level</label>
-              <select name="membershipLevel" id="membershipLevel" title="membershipLevel">
+              <select
+                name="membershipLevel"
+                id="membershipLevel"
+                title="membershipLevel"
+              >
                 <option value="" selected>Select a option</option>
                 <option value="1">NP Membershio</option>
                 <option value="2">Bronze Membership</option>
@@ -138,6 +160,7 @@
                 id="description"
                 cols="50"
                 rows="5"
+                title="description"
               ></textarea>
             </div>
             <input type="hidden" name="timestamp" id="timestamp" />
