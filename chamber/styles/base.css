@@ -108,9 +108,6 @@ header span {
   padding: 1.5rem;
   background-color: var(--color-secondary);
   height: 12rem;
-}
-
-.hero {
   .title,
   .subtitle {
     color: var(--color-secondary-content);
