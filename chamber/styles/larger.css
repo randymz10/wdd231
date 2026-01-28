@@ -53,11 +53,11 @@
     margin: 0 1rem 2rem 0;
   }
 
-  .box {
+  .container {
     display: flex;
   }
 
-  .form-box {
+  .form-container {
     flex: 1;
   }
 

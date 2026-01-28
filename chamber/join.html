@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang="zxx">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
     <meta
       name="description"
       content="Join the Chamber of Commerce to access networking opportunities, business resources, advocacy, and community visibility. Apply online and grow with us."
-    >
-    <meta name="author" content="Randy Muñoz" >
+    />
+    <meta name="author" content="Randy Muñoz" />
 
     <!--SOCIAL MEDIA TAGS-->
 
-    <meta property="og:title" content="Join| Chamber of commerce" >
-    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Join| Chamber of commerce" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://randymz10.github.io/wdd231/chamber/join.html"
-    >
+    />
     <meta
       property="og:image"
       content="https://randymz10.github.io/wdd231/chamber/images/chamber-banner.jpg"
-    >
+    />
     <meta
       property="og:description"
       content="Join the Chamber of Commerce to access networking opportunities, business resources, advocacy, and community visibility. Apply online and grow with us."
-    >
+    />
 
     <!--STYLESHETS-->
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -73,8 +73,8 @@
 
     <main>
       <h1>Join | Chamber of commerce</h1>
-      <section class="box">
-        <section class="form-box">
+      <section class="container">
+        <section class="form-container">
           <h2>Membership Application Form</h2>
 
           <!--Form-->
@@ -110,8 +110,9 @@
                 id="organizationTitle"
                 autocomplete="organization-title"
                 required
-                title="organization-title"
-                pattern="[A-Za-z]+"
+                pattern="[A-Za-z\- ]{7,}"
+                title="Organization name must be at least 7 characters long and contain only letters, hyphens, and spaces"
+              />
               />
             </div>
             <div class="form-c">
@@ -139,7 +140,14 @@
             </div>
             <div class="form-c">
               <label for="bName">Bussiness name</label
-              ><input type="text" name="bName" id="bName" autocomplete="organization"/>
+              ><input
+                type="text"
+                name="bName"
+                id="bName"
+                autocomplete="organization"
+                title="organization-name"
+                required
+              />
             </div>
             <div class="form-c">
               <label for="membershipLevel">Membership level</label>
@@ -181,7 +189,7 @@
               Learn More
             </button>
             <dialog class="modal" id="nonProfitModal">
-              <div class="modalbox">
+              <div class="modalcontainer">
                 <button class="btn closeBtn">❌</button>
                 <h3>Non Profit Membership Level</h3>
                 <p>
@@ -203,7 +211,7 @@
               Learn More
             </button>
             <dialog class="modal" id="bronzeModal">
-              <div class="modalbox">
+              <div class="modalcontainer">
                 <button class="btn closeBtn">❌</button>
                 <h3>Bronze Membership Level</h3>
                 <p>
@@ -225,7 +233,7 @@
               Learn More
             </button>
             <dialog class="modal" id="silverModal">
-              <div class="modalbox">
+              <div class="modalcontainer">
                 <button class="btn closeBtn">❌</button>
                 <h3>Silver Membership Level</h3>
                 <p>
@@ -247,7 +255,7 @@
               Learn More
             </button>
             <dialog class="modal" id="goldModal">
-              <div class="modalbox">
+              <div class="modalcontainer">
                 <button class="btn closeBtn">❌</button>
                 <h3>Non Profit Membership Level</h3>
                 <p>
