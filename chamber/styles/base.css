@@ -268,7 +268,7 @@ header span {
   margin: 0 auto;
 }
 
-.form-c {
+.form-control {
   display: flex;
   flex-direction: column;
   margin: 0.7rem 0;
