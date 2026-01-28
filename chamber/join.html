@@ -73,8 +73,8 @@
 
     <main>
       <h1>Join | Chamber of commerce</h1>
-      <section class="container">
-        <section class="form-container">
+      <section class="box">
+        <section class="form-box">
           <h2>Membership Application Form</h2>
 
           <!--Form-->
@@ -110,6 +110,8 @@
                 id="organizationTitle"
                 autocomplete="organization-title"
                 required
+                title="organization-title"
+                pattern="[A-Za-z]+"
               />
             </div>
             <div class="form-c">
@@ -137,7 +139,7 @@
             </div>
             <div class="form-c">
               <label for="bName">Bussiness name</label
-              ><input type="text" name="bName" id="bName" />
+              ><input type="text" name="bName" id="bName" autocomplete="organization"/>
             </div>
             <div class="form-c">
               <label for="membershipLevel">Membership level</label>
@@ -179,7 +181,7 @@
               Learn More
             </button>
             <dialog class="modal" id="nonProfitModal">
-              <div class="modalContainer">
+              <div class="modalbox">
                 <button class="btn closeBtn">❌</button>
                 <h3>Non Profit Membership Level</h3>
                 <p>
@@ -201,7 +203,7 @@
               Learn More
             </button>
             <dialog class="modal" id="bronzeModal">
-              <div class="modalContainer">
+              <div class="modalbox">
                 <button class="btn closeBtn">❌</button>
                 <h3>Bronze Membership Level</h3>
                 <p>
@@ -223,7 +225,7 @@
               Learn More
             </button>
             <dialog class="modal" id="silverModal">
-              <div class="modalContainer">
+              <div class="modalbox">
                 <button class="btn closeBtn">❌</button>
                 <h3>Silver Membership Level</h3>
                 <p>
@@ -245,7 +247,7 @@
               Learn More
             </button>
             <dialog class="modal" id="goldModal">
-              <div class="modalContainer">
+              <div class="modalbox">
                 <button class="btn closeBtn">❌</button>
                 <h3>Non Profit Membership Level</h3>
                 <p>
