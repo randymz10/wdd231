@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Explore our Chamber of Commerce business directory to connect with trusted local companies, services, and community leaders."
+    />
+    <meta name="author" content="Randy Muñoz" />
+
+    <!--SOCIAL MEDIA TAGS-->
+
+    <meta property="og:title" content="Discover | Chamber of commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://randymz10.github.io/wdd231/chamber/discover.html"
+    />
+    <meta
+      property="og:description"
+      content="Explore our Chamber of Commerce business discover to connect with trusted local companies, services, and community leaders."
+    />
+    <!--STYLESHETS-->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--SCRIPTS-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/localCompanies.js" defer></script>
+    <title>Discover | Chamber of commerce</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="images/logo.svg" alt="Site logo" width="512" height="512" />
+      <span>Randy's chamber of commerce </span>
+      <button id="hamburger-button" class="hamburguer"></button>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+    <!--MAIN CONTENT-->
+    <main id="local-companies"></main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <section>
+        <p><strong>Randy Muñoz Chamber of Commerce</strong></p>
+        <p>Av Camilly Fernandes Rodrigues 1020</p>
+        <p>Londrina/PR, Brasil</p>
+        <p>info@randy-chamber.comm</p>
+        <p>+55 3 3221 1122</p>
+      </section>
+      <section>
+        <div class="social">
+          <a href="https://linkedin.com/in/randymz10">
+            <img src="images/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a href="https://github.com/randymz10">
+            <img src="images/github.svg" alt="Github icon" />
+          </a>
+          <a href="https://instagram.com/randymz10"
+            ><img src="images/instagram.svg" alt="Instagram icon" />
+          </a>
+        </div>
+        <p></p>
+      </section>
+      <section>
+        <p>WDD2341 Class Project</p>
+        <p>Randy Muñoz</p>
+        <p>
+          &copy; <span id="currentyear"></span> Randy Muñoz Chamber of Commerce
+        </p>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
