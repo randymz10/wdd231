@@ -22,10 +22,3 @@ async function getCardsData() {
 }
 
 getCardsData();
-
-// const title = document.createElement("h2");
-// const figure = document.createElement("figure");
-// const image = document.createElement("img");
-// const address = document.createElement("address");
-// const description = document.createElement("p");
-// const button = document.createElement("button");
