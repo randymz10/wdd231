@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="styles/colors.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/extra-larger.css" />
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +44,8 @@
     <!--SCRIPTS-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/localCompanies.js" defer></script>
+    <script src="scripts/title.js" defer></script>
+    <script type="module" src="scripts/localCompanies.js"></script>
     <title>Discover | Chamber of commerce</title>
   </head>
   <body>
@@ -57,15 +59,18 @@
     <!-- NAVIGATION -->
     <nav id="nav-bar" class="navigation">
       <ul>
-        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html">Discover</a></li>
+        <li class="current"><a href="discover.html">Discover</a></li>
       </ul>
     </nav>
 
     <!--MAIN CONTENT-->
-    <main id="local-companies"></main>
+    <main>
+      <section id="discover-title"></section>
+      <section id="local-companies"></section>
+    </main>
 
     <!--FOOTER-->
     <footer class="footer">
