@@ -1,0 +1,101 @@
+/****************** GLOBAL **************************/
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  background-color: #e8e8e8;
+  color: #181a2a;
+}
+
+/**********************HEADER************************/
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: center;
+  column-gap: 8px;
+  background-color: #fff;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* padding-bottom: 5px; */
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--color-base-content);
+}
+
+/************* HAMBURGER NAVIGATION ***********/
+
+.hamburguer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+
+.hamburguer.show::before {
+  content: "\00D7";
+}
+
+/*********** NAVIGATION ********/
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px #d1d1d1;
+  color: #181a2a;
+}
+
+.navigation li.current {
+  background-color: #fff;
+}
+.navigation li.current:hover {
+  background-color: #0082ce;
+}
+
+.navigation li.current a {
+  color: #181a2a;
+}
+
+.navigation li.current a:hover {
+  color: #fff;
+}
+
+.navigation li {
+  background-color: #fff;
+}
+
+.navigation li:hover {
+  background-color: color-mix(in srgb, #fff, black 20%);
+}
+
+.navigation li:active {
+  background-color: color-mix(in srgb, #fff, black 50%);
+}
