@@ -1,0 +1,62 @@
+@media only screen and (min-width: 38rem) {
+  header,
+  main,
+  nav,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    grid-template-columns: 24px auto;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+  h1 {
+    grid-area: top-area;
+  }
+
+  .container > .card:first-child {
+    grid-area: left-area;
+  }
+
+  .container > .card:nth-of-type(2) {
+    grid-area: right-area;
+  }
+
+  .container > .card:nth-of-type(3) {
+    grid-area: bottom-area;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "top-area top-area top-area"
+      "left-area left-area right-area"
+      "bottom-area bottom-area bottom-area";
+    column-gap: 10px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
