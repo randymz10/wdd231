@@ -1,11 +1,11 @@
 /********************* GLOBAL***********************/
 * {
   font-family: "Inter", sans-serif;
-  color: var(--color-base-content);
+  color: oklch(35.519% 0.032 262.988);
 }
 
 html {
-  background-color: var(--color-base-200);
+  background-color: oklch(93% 0 0);
 }
 /**********************HEADER************************/
 header {
@@ -26,7 +26,7 @@ header img {
 
 header span {
   font-size: 1.2rem;
-  color: var(--color-base-content);
+  color: oklch(35.519% 0.032 262.988);
 }
 
 /************* HAMBURGER NAVIGATION ***********/
@@ -67,29 +67,29 @@ header span {
   display: block;
   padding: 0.8rem 10px;
   text-decoration: none;
-  border-bottom: solid 1px var(--color-base-content);
+  border-bottom: solid 1px oklch(35.519% 0.032 262.988);
 }
 
 .navigation li.current {
-  background-color: var(--color-primary);
+  background-color: oklch(76.662% 0.135 153.45);
 }
 .navigation li.current:hover {
-  background-color: color-mix(in srgb, var(--color-primary), black 20%);
+  background-color: color-mix(in srgb, oklch(76.662% 0.135 153.45), black 20%);
 }
 
 .navigation li.current a {
-  color: var(--color-primary-content);
+  color: oklch(33.387% 0.04 162.24);
 }
 
 .navigation li {
-  background-color: var(--color-base-100);
+  background-color: oklch(100% 0 0);
 }
 .navigation li:hover {
-  background-color: var(--color-primary);
+  background-color: oklch(76.662% 0.135 153.45);
 }
 
 .navigation li a:hover {
-  color: var(--color-primary-content);
+  color: oklch(33.387% 0.04 162.24);
 }
 
 /********** CONTENT *************/
@@ -105,16 +105,17 @@ header span {
 
 .card {
   margin: 20px auto;
-  background-color: var(--color-base-100);
-  border-radius: var(--radius-box);
+  background-color: oklch(100% 0 0);
+  border-radius: 1rem;
   /* padding-bottom: 8px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .card-title {
   text-align: center;
-  background-color: var(--color-base-300);
+  background-color: oklch(86% 0 0);
   margin: 0;
   padding: 8px;
   font-size: 24px;
@@ -123,7 +124,7 @@ header span {
 .card-body {
   padding: 8px;
   padding-bottom: 24px;
-  background-color: var(--color-base-100);
+  background-color: oklch(100% 0 0);
 }
 
 .card-image {
@@ -147,15 +148,15 @@ header span {
 
 .btn {
   border: inherit;
-  background-color: var(--color-primary);
-  color: var(--color-primary-content);
+  background-color: oklch(76.662% 0.135 153.45);
+  color: oklch(33.387% 0.04 162.24);
   border-radius: 5px;
   padding: 12px 0;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: color-mix(in srgb, var(--color-primary), black 20%);
+  background-color: color-mix(in srgb, oklch(76.662% 0.135 153.45), black 20%);
   font-weight: bold;
   transition: 300ms;
 }
@@ -164,8 +165,8 @@ header span {
   display: block;
   padding: 10px 0;
   margin: 5px 0;
-  background-color: var(--color-neutral);
-  color: var(--color-neutral-content);
+  background-color: oklch(35.519% 0.032 262.988);
+  color: oklch(98.462% 0.001 247.838);
   text-align: center;
   font-weight: 600;
   border-radius: 5px;
@@ -181,7 +182,7 @@ header span {
 .footer,
 .footer p,
 .social {
-  background-color: var(--color-base-300);
+  background-color: oklch(86% 0 0);
 }
 
 .footer {
@@ -208,9 +209,9 @@ header span {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--color-base-100);
-  border: var(--color-base-300) solid 1px;
-  border-radius: var(--radius-box);
+  background-color: oklch(100% 0 0);
+  border: oklch(86% 0 0) solid 1px;
+  border-radius: 1rem;
 }
 
 .social img {
@@ -219,7 +220,7 @@ header span {
 }
 
 .social a:hover {
-  background-color: var(--color-base-200);
+  background-color: oklch(93% 0 0);
 }
 
 #lastModified {
