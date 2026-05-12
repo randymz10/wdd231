@@ -286,49 +286,49 @@ header span {
   margin: 1rem 3rem;
   padding: 0.5rem 1rem;
 
-  .companyCard-title {
-    grid-area: name;
-    text-align: center;
-  }
+}
+.companyCard .companyCard-title {
+  grid-area: name;
+  text-align: center;
+}
 
-  .companyCard-image {
-    grid-area: image;
-  }
+.companyCard .companyCard-image {
+  grid-area: image;
+}
 
-  .companyCard-address {
-    grid-area: address;
-  }
+.companyCard .companyCard-address {
+  grid-area: address;
+}
 
-  .companyCard-description {
-    grid-area: description;
-  }
+.companyCard .companyCard-description {
+  grid-area: description;
+}
 
-  .companyCard-button {
-    grid-area: button;
-  }
+.companyCard .companyCard-button {
+  grid-area: button;
+}
 
-  img {
-    width: 100%;
-    border-radius: var(--radius-box);
-  }
+.companyCard img {
+  width: 100%;
+  border-radius: var(--radius-box);
+}
 
-  img:hover {
-    box-shadow:
-      rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px,
-      rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px,
-      rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
+.companyCard img:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
-  div {
-    grid-area: button;
-    display: flex;
-  }
+.companyCard div {
+  grid-area: button;
+  display: flex;
+}
 
-  .btn {
-    margin: 1rem auto;
-  }
+.companyCard .btn {
+  margin: 1rem auto;
 }
 
 /*********************** FORMS **************************/
