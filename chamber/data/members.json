@@ -1,0 +1,72 @@
+[
+  {
+    "name": "NovaPulse Technologies",
+    "address": "1410 Innovation Blvd, São Paulo, SP",
+    "phone": "+55 11 5566-9874",
+    "website": "www.novapulse.com.br",
+    "icon_filename": "novapulse_logo.webp",
+    "membership_level": 3,
+    "category": "AI & Robotics",
+    "founded": 2017
+  },
+  {
+    "name": "Verdanza Café",
+    "address": "R. Harmonia 450, Londrina, PR",
+    "phone": "+55 43 3322-4455",
+    "website": "www.verdanza.com.br",
+    "icon_filename": "verdanza_logo.webp",
+    "membership_level": 2,
+    "category": "Hospitality",
+    "founded": 2009
+  },
+  {
+    "name": "Solara Eco Systems",
+    "address": "Av. do Progresso 810, Curitiba, PR",
+    "phone": "+55 41 9988-7711",
+    "website": "www.solaraeco.com",
+    "icon_filename": "solara_logo.webp",
+    "membership_level": 3,
+    "category": "Sustainability",
+    "founded": 2013
+  },
+  {
+    "name": "Bravura Entertainment",
+    "address": "R. das Lendas 1280, Rio de Janeiro, RJ",
+    "phone": "+55 21 3131-5151",
+    "website": "www.bravuraent.com",
+    "icon_filename": "bravura_logo.webp",
+    "membership_level": 1,
+    "category": "Media & Events",
+    "founded": 2021
+  },
+  {
+    "name": "Quantix Labs",
+    "address": "R. Computação 200, Campinas, SP",
+    "phone": "+55 19 3782-1000",
+    "website": "www.quantixlabs.com.br",
+    "icon_filename": "quantix_logo.webp",
+    "membership_level": 2,
+    "category": "Biotechnology",
+    "founded": 2015
+  },
+  {
+    "name": "Atlas Motors",
+    "address": "Rod. Transbrasiliana Km 12, Goiânia, GO",
+    "phone": "+55 62 3655-4400",
+    "website": "www.atlasmotors.com",
+    "icon_filename": "atlas_logo.webp",
+    "membership_level": 3,
+    "category": "Automotive",
+    "founded": 2005
+  },
+  {
+    "name": "PixelNest Design Studio",
+    "address": "Rua Criativa 77, Florianópolis, SC",
+    "phone": "+55 48 3232-0099",
+    "website": "www.pixelneststudio.com",
+    "icon_filename": "pixelnest_logo.webp",
+    "membership_level": 1,
+    "category": "Design",
+    "founded": 2018
+  }
+]
