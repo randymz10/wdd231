@@ -19,7 +19,7 @@ header {
   grid-template-columns: 24px auto 44px;
   padding: 5px 0 5px 10px;
   align-items: end;
-  bottom: solid 1px #ddd;
+  /* bottom: solid 1px #ddd; */
   column-gap: 8px;
 }
 
@@ -108,10 +108,11 @@ header span {
   padding: 1.5rem;
   background-color: var(--color-secondary);
   height: 12rem;
-  .title,
-  .subtitle {
-    color: var(--color-secondary-content);
-  }
+}
+
+.hero .title,
+.hero .subtitle {
+  color: var(--color-secondary-content);
 }
 
 .hero-footer {
@@ -342,11 +343,12 @@ header span {
   flex-direction: column;
   margin: 0.7rem 0;
 
-  input,
-  select,
-  textarea {
-    background-color: var(--color-base-100);
-  }
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  background-color: var(--color-base-100);
 }
 
 .levels {
@@ -363,9 +365,10 @@ header span {
   border: 1px solid var(--color-secondary);
   text-align: center;
   border-radius: var(--radius-box);
-  h3 {
-    color: var(--color-primary-content);
-  }
+}
+
+.level-card h3 {
+  color: var(--color-primary-content);
 }
 
 .modal {
@@ -374,10 +377,12 @@ header span {
   border-radius: var(--radius-box);
   border: 2px solid var(--color-base-300);
 
-  h3 {
-    color: var(--color-base-content);
-  }
 }
+
+.modal h3 {
+  color: var(--color-base-content);
+}
+
 ::backdrop {
   background-color: rgb(0 0 0 /50%);
 }
