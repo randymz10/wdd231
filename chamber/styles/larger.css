@@ -53,10 +53,8 @@
   }
 
   .list .card {
-    /* display: grid;
-    grid-template-columns: 1fr 6fr; */
-   padding: 8px 16px;
-   margin: 8px auto;
+    padding: 8px 16px;
+    margin: 8px auto;
   }
 
   .list .card .card-title {

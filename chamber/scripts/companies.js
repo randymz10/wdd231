@@ -67,11 +67,7 @@ const displayCompanies = (companies) => {
   });
 };
 
-function displayBcards(data) {
-  console.log(data);
-}
-
-const getCompaniesData = async () => {
+ const getCompaniesData = async () => {
   const response = await fetch(url);
   const data = await response.json();
   displayCompanies(data);
