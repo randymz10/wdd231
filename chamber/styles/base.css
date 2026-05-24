@@ -216,7 +216,7 @@ header span {
 
 /************* COMPONENTS ****************/
 
-.card,
+.pCard,
 .bcard {
   margin: 20px auto;
   background-color: var(--color-base-100);
@@ -227,7 +227,7 @@ header span {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.card-title {
+.pCard-title {
   text-align: center;
   background-color: var(--color-base-300);
   margin: 0;
@@ -235,7 +235,7 @@ header span {
   font-size: 24px;
 }
 
-.card-body,
+.pCard-body,
 .bcard-body {
   padding: 8px;
   padding-bottom: 24px;
@@ -287,7 +287,7 @@ header span {
   border-radius: 5px;
 }
 
-.btn {
+.button {
   border: inherit;
   background-color: var(--color-primary);
   color: var(--color-primary-content);
@@ -296,17 +296,17 @@ header span {
   cursor: pointer;
 }
 
-.btn:hover {
+.button:hover {
   background-color: color-mix(in srgb, var(--color-primary), black 20%);
   font-weight: bold;
   transition: 300ms;
 }
 
-.btn-secondary {
+.button-secondary {
   background-color: var(--color-secondary);
 }
 
-.btn-secondary:hover {
+.button-secondary:hover {
   background-color: color-mix(in srgb, var(--color-secondary), black 20%);
   color: var(--color-secondary-content);
 }

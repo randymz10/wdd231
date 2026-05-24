@@ -52,24 +52,24 @@
     flex-direction: column;
   }
 
-  .list .card {
+  .list .pCard {
     padding: 8px 16px;
     margin: 8px auto;
   }
 
-  .list .card .card-title {
+  .list .pCard .pCard-title {
     background-color: transparent;
     margin: auto;
     font-size: 16px;
   }
 
-  .list .card .card-body {
+  .list .pCard .pCard-body {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
     padding: 0;
   }
 
-  .list .card .card-image {
+  .list .pCard .card-image {
     display: none;
   }
 
@@ -78,7 +78,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .info > .card:nth-child(1) {
+  .info > .pCard:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 3;
     max-width: 100%;
