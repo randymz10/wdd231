@@ -11,7 +11,7 @@ async function getCardsData() {
     <section class="companyCard">
         <h2 class="companyCard-title">${company.name}</h2>
         <figure class="companyCard-image">
-          <img src="images/local-companies/${company.icon_filename}" alt="${company.name}" width="300px" height="200px"/>
+          <img src="images/local-companies/${company.icon_filename}" alt="${company.name}" width="300px" height="200px" loading="lazy"/>
         </figure>
         <address class="companyCard-address">${company.address}</address>
         <p class="companyCard-description">${company.description}</p>
