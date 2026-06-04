@@ -3,7 +3,6 @@ const currentDay = new Date();
 const diffHours = (lastVisited - currentDay) / (1000 * 60 * 60 * 24);
 let title;
 
-
 if (!lastVisited) {
   title = "Welcome! Let us know if you have any questions.";
   localStorage.setItem("lastVisited", currentDay.toDateString);
@@ -17,6 +16,6 @@ if (!lastVisited) {
   }
 }
 
-document.querySelector("#discover-title").innerHTML =
-  /*html*/
-  `<h1>${title}</h1>`;
+document.querySelector("#discover-title").innerText = title;
+// /*html*/
+// `<h1>${title}</h1>`;
