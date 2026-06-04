@@ -1,0 +1,10 @@
+@media screen and (min-width: 64rem) {
+  #local-companies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .companyCard {
+    margin: 1rem 1rem;
+  }
+}
