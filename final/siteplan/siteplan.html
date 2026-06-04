@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Site Plan</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header>
+        <h1>Site plan Mendix Express Solutions</h1>
+      </header>
+      <section>
+        <h2>Site Name: <i>Mendix Express Solutions</i></h2>
+
+        <p>
+          This name clearly communicates the focus on Mendix low‑code
+          development while emphasizing speed and simplicity (“Express”).
+          “Solutions” signals a service‑oriented offering for business
+          challenges. Optional domain availability: mendix-express.com
+        </p>
+      </section>
+      <section>
+        <h2>Site Purpose:</h2>
+        <p>
+          The site serves as a dedicated hub for businesses seeking fast,
+          cost‑effective application development using Mendix. It provides
+          detailed information about low‑code development services, including
+          project scoping, custom app building, deployment support, and
+          maintenance. Visitors can explore case studies, request a free
+          consultation, access technical resources (e.g., whitepapers,
+          webinars), and submit project inquiries via online forms. The site
+          also highlights Mendix’s advantages over traditional development,
+          helping organizations understand how low‑code accelerates digital
+          transformation.
+        </p>
+      </section>
+      <section>
+        <h2>Scenarios:</h2>
+        <ol>
+          <li>
+            <p>
+              <strong>
+                “How much faster can Mendix deliver a custom business app
+                compared to traditional coding?”
+              </strong>
+            </p>
+            <p>
+              <i>
+                The site answers this through a side‑by‑side comparison chart,
+                development timeline estimates, and real‑world case studies
+                showing reduced time‑to‑market.</i
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>
+                “Our team has no coding experience – can we still use Mendix to
+                build and update apps ourselves?”
+              </strong>
+            </p>
+            <p>
+              <i>
+                The site addresses this with a dedicated “For Non‑Technical
+                Users” section, explaining Mendix’s visual drag‑and‑drop
+                interface, offering demo videos, and listing training/support
+                packages that empower business users to participate in
+                development.
+              </i>
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Typography:</h2>
+        <p><strong>Primary Font Family:</strong> <i>Open Sans</i></p>
+        <ul>
+          <li>
+            <strong>Usage:</strong> All body text, headings, navigation,
+            buttons, and form labels.
+          </li>
+          <li>
+            <strong>Fallback stack:</strong>
+            <code>
+              'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif</code
+            >
+          </li>
+          <li>
+            <strong>Weights & styles:</strong>
+            <ul>
+              <li>Regular (400) – for standard body copy and secondary text</li>
+              <li>
+                Semi‑bold (600) – for subheadings, callouts, and button text
+              </li>
+              <li>
+                Bold (700) – for main headings (H1, H2) and strong emphasis
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Optional (for improved readability):</strong>
+            <ul>
+              <li>
+                Light (300) – for large hero text or captions (used sparingly)
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Color scheme</h2>
+        <div class="table-wrapper">
+          <table class="color-table">
+            <thead>
+              <tr>
+                <th>Color role</th>
+                <th>Variable name</th>
+                <th>OKLCH value</th>
+                <th>Swatch preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- BASE COLORS -->
+              <tr>
+                <td><span class="role-badge">Base</span> Surface 100</td>
+                <td><code class="var-name">--color-base-100</code></td>
+                <td><span class="oklch-value">oklch(100% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="
+                        background: oklch(100% 0 0);
+                        border: 1px solid #ddd;
+                      "
+                    ></div>
+                    <span style="font-size: 0.8rem">#FFFFFF / pure white</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Base</span> Surface 200</td>
+                <td><code class="var-name">--color-base-200</code></td>
+                <td><span class="oklch-value">oklch(93% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(93% 0 0); border: 1px solid #ccc"
+                    ></div>
+                    <span style="font-size: 0.8rem">light gray mist</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Base</span> Surface 300</td>
+                <td><code class="var-name">--color-base-300</code></td>
+                <td><span class="oklch-value">oklch(86% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(86% 0 0); border: 1px solid #aaa"
+                    ></div>
+                    <span style="font-size: 0.8rem">cool light gray</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Base</span> Content</td>
+                <td><code class="var-name">--color-base-content</code></td>
+                <td>
+                  <span class="oklch-value">oklch(35.519% 0.032 262.988)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(35.519% 0.032 262.988)"
+                    ></div>
+                    <span style="font-size: 0.8rem; color: #1e293b"
+                      >dark blue‑gray text</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <!-- PRIMARY -->
+              <tr>
+                <td><span class="role-badge">Primary</span> Main</td>
+                <td><code class="var-name">--color-primary</code></td>
+                <td>
+                  <span class="oklch-value">oklch(76.662% 0.135 153.45)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(76.662% 0.135 153.45)"
+                    ></div>
+                    <span style="font-size: 0.8rem">mint / green accent</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Primary</span> Content</td>
+                <td><code class="var-name">--color-primary-content</code></td>
+                <td>
+                  <span class="oklch-value">oklch(33.387% 0.04 162.24)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(33.387% 0.04 162.24)"
+                    ></div>
+                    <span style="font-size: 0.8rem; color: white"
+                      >deep forest text</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <!-- SECONDARY -->
+              <tr>
+                <td><span class="role-badge">Secondary</span> Main</td>
+                <td><code class="var-name">--color-secondary</code></td>
+                <td>
+                  <span class="oklch-value">oklch(61.302% 0.202 261.294)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(61.302% 0.202 261.294)"
+                    ></div>
+                    <span style="font-size: 0.8rem">vibrant blue</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Secondary</span> Content</td>
+                <td><code class="var-name">--color-secondary-content</code></td>
+                <td><span class="oklch-value">oklch(100% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="
+                        background: oklch(100% 0 0);
+                        border: 1px solid #ddd;
+                      "
+                    ></div>
+                    <span style="font-size: 0.8rem">white text / icons</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- ACCENT -->
+              <tr>
+                <td><span class="role-badge">Accent</span> Main</td>
+                <td><code class="var-name">--color-accent</code></td>
+                <td>
+                  <span class="oklch-value">oklch(72.772% 0.149 33.2)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(72.772% 0.149 33.2)"
+                    ></div>
+                    <span style="font-size: 0.8rem">warm amber/coral</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Accent</span> Content</td>
+                <td><code class="var-name">--color-accent-content</code></td>
+                <td><span class="oklch-value">oklch(0% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(0% 0 0)"
+                    ></div>
+                    <span style="font-size: 0.8rem; color: white"
+                      >pure black text</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <!-- NEUTRAL -->
+              <tr>
+                <td><span class="role-badge">Neutral</span> Main</td>
+                <td><code class="var-name">--color-neutral</code></td>
+                <td>
+                  <span class="oklch-value">oklch(35.519% 0.032 262.988)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(35.519% 0.032 262.988)"
+                    ></div>
+                    <span style="font-size: 0.8rem">slate gray</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Neutral</span> Content</td>
+                <td><code class="var-name">--color-neutral-content</code></td>
+                <td>
+                  <span class="oklch-value">oklch(98.462% 0.001 247.838)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="
+                        background: oklch(98.462% 0.001 247.838);
+                        border: 1px solid #e2e8f0;
+                      "
+                    ></div>
+                    <span style="font-size: 0.8rem">near‑white</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- INFO -->
+              <tr>
+                <td><span class="role-badge">Info</span> Action / Message</td>
+                <td><code class="var-name">--color-info</code></td>
+                <td>
+                  <span class="oklch-value">oklch(72.06% 0.191 231.6)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(72.06% 0.191 231.6)"
+                    ></div>
+                    <span style="font-size: 0.8rem">sky blue</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Info</span> Content</td>
+                <td><code class="var-name">--color-info-content</code></td>
+                <td><span class="oklch-value">oklch(0% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(0% 0 0)"
+                    ></div>
+                    <span style="font-size: 0.8rem">black</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- SUCCESS -->
+              <tr>
+                <td><span class="role-badge">Success</span> Positive</td>
+                <td><code class="var-name">--color-success</code></td>
+                <td><span class="oklch-value">oklch(64.8% 0.15 160)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(64.8% 0.15 160)"
+                    ></div>
+                    <span style="font-size: 0.8rem">emerald green</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Success</span> Content</td>
+                <td><code class="var-name">--color-success-content</code></td>
+                <td><span class="oklch-value">oklch(0% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(0% 0 0)"
+                    ></div>
+                    <span style="font-size: 0.8rem">black</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- WARNING -->
+              <tr>
+                <td><span class="role-badge">Warning</span> Caution</td>
+                <td><code class="var-name">--color-warning</code></td>
+                <td>
+                  <span class="oklch-value">oklch(84.71% 0.199 83.87)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(84.71% 0.199 83.87)"
+                    ></div>
+                    <span style="font-size: 0.8rem">golden yellow</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="role-badge">Warning</span> Content</td>
+                <td><code class="var-name">--color-warning-content</code></td>
+                <td><span class="oklch-value">oklch(0% 0 0)</span></td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(0% 0 0)"
+                    ></div>
+                    <span style="font-size: 0.8rem">black</span>
+                  </div>
+                </td>
+              </tr>
+              <!-- ERROR -->
+              <tr>
+                <td><span class="role-badge">Error</span> Danger / Alert</td>
+                <td><code class="var-name">--color-error</code></td>
+                <td>
+                  <span class="oklch-value">oklch(71.76% 0.221 22.18)</span>
+                </td>
+                <td>
+                  <div class="swatch">
+                    <div
+                      class="color-circle"
+                      style="background: oklch(71.76% 0.221 22.18)"
+                    ></div>
+                    <span style="font-size: 0.8rem">red / tomato</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Wireframe</h2>
+        <div class="wireframe-wrapper">
+          <img src="images/wireframe.webp" alt="Wireframe" class="wireframe" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
