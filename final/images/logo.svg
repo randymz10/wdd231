@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Stylized 'M' and 'E' combined with a fast-forward/building block concept -->
+  <path d="M20 70V30L50 55L80 30V70" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M50 55V85" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  <!-- Accent bolt/spark indicating speed -->
+  <path d="M75 15L65 35H85L75 55" fill="none" stroke="#76e3a3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
