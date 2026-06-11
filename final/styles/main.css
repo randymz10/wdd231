@@ -8,6 +8,94 @@ html {
   background-color: var(--color-base-200);
 }
 
+/**********************HEADER************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 5px 10px;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+}
+
+.header-brand {
+  display: flex;
+  align-self: center;
+}
+
+.header-brand img {
+  width: 48px;
+}
+
+.header-brand span {
+  align-self: center;
+  font-size: 1.2rem;
+  color: var(--color-base-content);
+}
+
+/************* HAMBURGER NAVIGATION ***********/
+
+.hamburguer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+
+.hamburguer.show::before {
+  content: "\00D7";
+}
+
+/*********** NAVIGATION ********/
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.8rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px var(--color-base-content);
+}
+
+.navigation li.current {
+  background-color: var(--color-primary);
+}
+.navigation li.current:hover {
+  background-color: color-mix(in srgb, var(--color-primary), black 20%);
+}
+
+.navigation li.current a {
+  color: var(--color-primary-content);
+}
+
+.navigation li {
+  background-color: var(--color-base-100);
+}
+.navigation li:hover {
+  background-color: var(--color-primary);
+}
+
+.navigation li a:hover {
+  color: var(--color-primary-content);
+}
+
 /******************* FOOTER ***************/
 .footer,
 .footer p,
@@ -51,6 +139,35 @@ html {
 
 .social a:hover {
   background-color: var(--color-base-200);
+}
+
+.linkedin-icon {
+  -webkit-mask: url("../images/linkedin.svg") no-repeat center;
+  mask: url("../images/linkedin.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.github-icon {
+  -webkit-mask: url("../images/github.svg") no-repeat center;
+  mask: url("../images/github.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.instagram-icon {
+  -webkit-mask: url("../images/instagram.svg") no-repeat center;
+  mask: url("../images/instagram.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.linkedin-icon,
+.github-icon,
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-base-content);
 }
 
 #lastModified {

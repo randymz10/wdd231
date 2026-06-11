@@ -1,0 +1,44 @@
+@media only screen and (min-width: 38rem) {
+  /* .header {
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .header-brand {
+    display: flex;
+    align-self: center;
+  }
+
+  .header-brand img {
+    width: 48px;
+  }
+
+  .header-brand span {
+    align-self: center;
+  }
+
+  .header-navbar {
+    margin-right: 20px;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+  }
+}

@@ -39,32 +39,67 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/main.js" defer></script>
   </head>
+
   <body>
-    <header></header>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-brand">
+        <img src="images/logo.svg" alt="Site logo" loading="lazy" />
+        <span>Mendix Express Solutions</span>
+      </div>
+      <div class="header-navbar">
+        <!-- NAVIGATION -->
+        <button
+          id="hamburger-button"
+          class="hamburguer"
+          aria-label="Menu button"
+        ></button>
+
+        <nav class="navigation">
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
     <main></main>
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="social">
         <a href="https://linkedin.com/in/randymz10" target="_blank">
-          <img src="images/linkedin.svg" alt="Linkedin icon" />
+          <div class="linkedin-icon"></div>
         </a>
         <a href="https://github.com/randymz10" target="_blank">
-          <img src="images/github.svg" alt="Github icon" />
+          <div class="github-icon"></div>
         </a>
         <a href="https://www.instagram.com/randymunoz_dev" target="_blank">
-          <img src="images/instagram.svg" alt="Instagram icon" />
+          <div class="instagram-icon"></div>
         </a>
       </div>
       <p>
-        &copy; <span id="currentyear"></span> | Randy Muñoz | Londrina/PR,
-        Brasil
+        &copy; <span id="#currentyear"></span> Mendix Express Solutions.
+        All rights reserved.
       </p>
-      <!-- <p id="lastModified"></p> -->
     </footer>
   </body>
 </html>
