@@ -8,6 +8,70 @@ html {
   background-color: var(--color-base-200);
 }
 
+/******************* COMPONENTS **************/
+
+.container {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.button {
+  border: inherit;
+  border-radius: 5px;
+  padding: 12px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  transition: 300ms;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+}
+
+.button-primary:hover {
+  background-color: color-mix(in srgb, var(--color-primary), black 20%);
+  color: color-mix(in srgb, var(--color-primary-content), black 20%);
+  /* transition: 300ms; */
+}
+
+.button-secondary-outline {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-neutral);
+}
+
+.button-secondary-outline:hover {
+  background-color: color-mix(in srgb, var(--color-secondary), white 70%);
+  /* transition: 300ms; */
+}
+
+.button-secondary-light {
+  background-color: var(--color-secondary-content);
+  /* border: 1px solid var(--color-secondary); */
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.button-secondary-light:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-content);
+  border: 1px solid var(--color-secondary-content);
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.card-title,
+.card-subtitle {
+  text-align: center;
+}
+
 /********************** HEADER ************************/
 .header {
   display: flex;
@@ -110,7 +174,21 @@ html {
   width: 100%;
 }
 
+/*************** BENEFITS ********************/
+
+.benefits {
+  margin: 5rem 0;
+}
+
+.benefit {
+  background-color: color-mix(in srgb, var(--color-base-300), white 30%);
+}
+
 /************** COMPARISON CARDS *************/
+
+.comparison {
+  margin: 5rem 0;
+}
 
 .comparison-title {
   text-align: center;
@@ -118,63 +196,41 @@ html {
 
 .comparison-cons,
 .comparison-pros {
-  background-color: var(--color-base-100) !important;
+  background-color: var(--color-base-100);
 }
 
 .comparison-cons {
-  border: 1px solid var(--color-error) !important;
+  border: 1px solid var(--color-error);
 }
 
 .comparison-pros {
-  border: 1px solid var(--color-success) !important;
+  border: 1px solid var(--color-success);
 }
 
-/******************* COMPONENTS **************/
+/************** CTA BANNER ***************/
 
-.container {
-  width: 85%;
-  margin: 3rem auto;
+.cta-banner {
+  background-color: var(--color-secondary);
+  padding: 2rem 1rem;
+  margin: 5rem 0;
 }
 
-.button {
-  border: inherit;
-  border-radius: 5px;
-  padding: 12px 10px;
-  cursor: pointer;
-  text-decoration: none;
+.cta-banner > div > h2,
+.cta-banner > div > p,
+.cta-label {
+  color: var(--color-secondary-content);
 }
 
-.button-primary {
-  background-color: var(--color-primary);
-  color: var(--color-primary-content);
+.cta-label {
+  background-color: \var(--color-secondary-content);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--color-secondary);
+  font-weight: 600;
 }
 
-.button-primary:hover {
-  background-color: color-mix(in srgb, var(--color-primary), black 20%);
-  color: color-mix(in srgb, var(--color-primary-content), black 20%);
-  transition: 300ms;
-}
-
-.button-secondary-outline {
-  border: 1px solid var(--color-secondary);
-  color: var(--color-neutral);
-}
-
-.button-secondary-outline:hover {
-  background-color: color-mix(in srgb, var(--color-secondary), white 70%);
-  transition: 300ms;
-}
-
-.card {
-  padding: 1rem;
-  background-color: color-mix(in srgb, var(--color-base-300), white 30%);
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-}
-
-.card-title,
-.card-subtitle {
-  text-align: center;
+.cta-button {
+  margin-top: 2rem;
 }
 
 /******************* FOOTER ***************/

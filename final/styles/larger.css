@@ -47,8 +47,28 @@
     gap: 1rem;
   }
 
+  /************ COMPARISON *****************/
+  .comparison-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 
-  
+  /************** CTA BANNER ***************/
+
+  .cta-banner {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+  }
+
+  .cta-button {
+    /* display: flex; */
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+  }
+
   /************* MAVIGATION **************/
 
   .hamburguer {
