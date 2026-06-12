@@ -11,6 +11,4 @@ navButton.addEventListener("click", () => {
 // Dates
 
 const currentYear = new Date();
-const currentYearElement = document.querySelector("#currentyear");
-
-currentYearElement.innerHTML = currentYear.getFullYear();
+document.querySelector("#currentyear").innerHTML = currentYear.getFullYear();
