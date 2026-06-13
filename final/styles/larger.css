@@ -17,6 +17,29 @@
     margin-right: 20px;
   }
 
+  /************* MAVIGATION **************/
+
+  .hamburguer {
+    display: none;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
   /************ HERO *****************/
 
   .hero {
@@ -57,38 +80,28 @@
   /************** CTA BANNER ***************/
 
   .cta-banner {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 5rem;
   }
 
   .cta-button {
-    /* display: flex; */
     margin: 0;
     align-self: center;
     justify-self: center;
   }
 
-  /************* MAVIGATION **************/
+  /******** TIMELINE **************/
 
-  .hamburguer {
-    display: none;
-  }
-
-  #nav-bar {
-    display: none;
-  }
-
-  .navigation {
-    display: block;
-    border-bottom: solid 1px #eee;
-  }
-
-  .navigation ul {
+  .timeline {
     display: flex;
   }
 
-  .navigation a {
-    border: none;
+  /********* TESTIMONIES **********/
+
+  .testimonies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }

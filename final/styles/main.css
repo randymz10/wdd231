@@ -233,6 +233,34 @@ html {
   margin-top: 2rem;
 }
 
+/******** TIMELINE  **************/
+
+.timeline {
+  text-align: center;
+}
+
+.timeline-number {
+  max-width: 48px;
+  margin: 0 auto;
+  background-color: var(--color-base-300);
+  border: 1px solid color-mix(in srgb, var(--color-base-300), black 10%);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/************* TESTIMONIES ***************/
+
+.testimonies{
+  margin: 5rem 0;
+}
+
+.testimony {
+  background-color: var(--color-base-100);
+  border-left: 4px solid var(--color-success);
+}
+
 /******************* FOOTER ***************/
 .footer,
 .footer p,
