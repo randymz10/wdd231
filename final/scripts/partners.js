@@ -15,7 +15,9 @@ const getPartnersData = async () => {
 const createPartnerCard = (partner) => {
     const partnertCard = document.createElement('div');
     partnertCard.classList.add('card');
-    partnertCard.innerHTML = html
+    partnertCard.innerHTML = /*html*/ `
+        <h3>${partner.name}</h3>
+    `
  };
 
 getPartnersData();
