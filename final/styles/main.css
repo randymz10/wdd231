@@ -61,6 +61,18 @@ html {
   border: 1px solid var(--color-secondary-content);
 }
 
+.button-success {
+  background-color: var(--color-success);
+  color: var(--color-success-content);
+}
+
+.button-success:hover {
+  background-color: color-mix(in srgb, var(--color-sucess), black 20%);
+  color: color-mix(in srgb, var(--color-success-content), black 20%);
+  border: 1px solid var(--color-success);
+  /* transition: 300ms; */
+}
+
 .card {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -174,6 +186,12 @@ html {
   width: 100%;
 }
 
+.hero-label {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 /*************** BENEFITS ********************/
 
 .benefits {
@@ -222,7 +240,7 @@ html {
 }
 
 .cta-label {
-  background-color: \var(--color-secondary-content);
+  background-color: var(--color-secondary-content);
   padding: 0.5rem;
   border-radius: 1rem;
   color: var(--color-secondary);
@@ -265,6 +283,43 @@ html {
 
 .partner-logo {
   max-width: 100%;
+}
+
+/***************** CASE STUDIES ****************/
+
+.case-studies {
+  border-top: 1px solid var(--color-base-300);
+  margin: 5rem 0;
+}
+
+.case-study {
+  background-color: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+}
+.case-study-problem-label,
+.case-study-solution-label {
+  text-transform: uppercase;
+}
+
+.case-study-problem-label {
+  color: var(--color-error);
+}
+
+.case-study-solution-label {
+  color: var(--color-success);
+}
+
+/***************** CTA BANNER PRIMARY *****************/
+
+.cta-banner-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.cta-button-success {
+  margin-top: 3rem;
 }
 
 /******************* FOOTER ***************/

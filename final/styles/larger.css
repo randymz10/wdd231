@@ -111,7 +111,17 @@
     display: flex;
   }
 
-  .partner-logo {
-    /* max-width: 100%; */
+  /***************** CASE STUDIES ****************/
+
+  .case-studies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-studies {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
