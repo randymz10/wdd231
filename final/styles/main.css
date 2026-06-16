@@ -400,23 +400,23 @@ html {
 }
 
 .linkedin-icon {
-  -webkit-mask: url("../images/linkedin.svg") no-repeat center center;
-  mask: url("../images/linkedin.svg") no-repeat center center;
-  -webkit-mask-size: contain;
+  /* -webkit-mask: url("../images/linkedin.svg") no-repeat center center;
+  -webkit-mask-size: contain; */
+  mask: url("../images/linkedin.svg") no-repeat center;
   mask-size: contain;
 }
 
 .github-icon {
-  -webkit-mask: url("../images/github.svg") no-repeat center center;
-  mask: url("../images/github.svg") no-repeat center center;
-  -webkit-mask-size: contain;
+  /* -webkit-mask: url("../images/github.svg") no-repeat center center;
+  -webkit-mask-size: contain; */
+  mask: url("../images/github.svg") no-repeat center;
   mask-size: contain;
 }
 
 .instagram-icon {
-  -webkit-mask: url("../images/instagram.svg") no-repeat center center;
-  mask: url("../images/instagram.svg") no-repeat center center;
-  -webkit-mask-size: contain;
+  /* -webkit-mask: url("../images/instagram.svg") no-repeat center center;
+  -webkit-mask-size: contain; */
+  mask: url("../images/instagram.svg") no-repeat center;
   mask-size: contain;
 }
 
