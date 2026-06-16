@@ -84,6 +84,10 @@ html {
   text-align: center;
 }
 
+.card-title {
+  font-size: 1rem;
+}
+
 /********************** HEADER ************************/
 .header {
   display: flex;
@@ -396,22 +400,22 @@ html {
 }
 
 .linkedin-icon {
-  -webkit-mask: url("../images/linkedin.svg") no-repeat center;
-  mask: url("../images/linkedin.svg") no-repeat center;
+  -webkit-mask: url("../images/linkedin.svg") no-repeat center center;
+  mask: url("../images/linkedin.svg") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
 
 .github-icon {
-  -webkit-mask: url("../images/github.svg") no-repeat center;
-  mask: url("../images/github.svg") no-repeat center;
+  -webkit-mask: url("../images/github.svg") no-repeat center center;
+  mask: url("../images/github.svg") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
 
 .instagram-icon {
-  -webkit-mask: url("../images/instagram.svg") no-repeat center;
-  mask: url("../images/instagram.svg") no-repeat center;
+  -webkit-mask: url("../images/instagram.svg") no-repeat center center;
+  mask: url("../images/instagram.svg") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
