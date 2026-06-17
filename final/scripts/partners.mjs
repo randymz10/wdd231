@@ -36,4 +36,4 @@ const renderPartners = async () => {
   });
 };
 
-renderPartners();
+export default renderPartners;

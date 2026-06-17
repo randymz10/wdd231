@@ -38,14 +38,14 @@
     <!-- STYLE SHEETS-->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- SCRIPTS -->
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
   </head>
 
   <body>
@@ -97,30 +97,30 @@
       <div class="contact">
         <!-- CONTACT FORM -->
         <section class="contact-form card">
-          <form action="">
+          <form action="information.html">
             <div class="form-control">
-              <label for="name">Name</label>
+              <label for="formName">Name</label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="formName"
+                id="formName"
                 placeholder="Enter yout name"
               />
             </div>
             <div class="form-control">
-              <label for="email">Email</label>
+              <label for="formEmail">Email</label>
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="formEmail"
+                id="formEmail"
                 placeholder="email@company.com"
               />
             </div>
             <div class="form-control">
-              <label for="description">Project description</label>
+              <label for="formDescription">Project description</label>
               <textarea
-                name="description"
-                id="description"
+                name="formDescription"
+                id="formDescription"
                 rows="5"
                 placeholder="Tell us about your goals and requirements"
               ></textarea>

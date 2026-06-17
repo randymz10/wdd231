@@ -354,6 +354,18 @@ html {
   margin: 10px 0;
 }
 
+/***************** INFORMATION *****************/
+
+.information-title {
+  text-align: center;
+}
+
+.information {
+  background-color: var(--color-base-100);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /******************* FOOTER ***************/
 .footer,
 .footer p,

@@ -29,4 +29,4 @@ const renderCaseStudies = async () => {
   });
 };
 
-renderCaseStudies();
+export default renderCaseStudies;
