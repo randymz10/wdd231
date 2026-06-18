@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Streamlining Patient Intake & Bed Management",
     "problem": "Manual patient admission and bed assignment processes caused long wait times, administrative errors, and poor visibility into bed availability across five hospital locations.",
     "solution": "A Mendix-based patient flow application that digitizes intake forms, provides real-time bed occupancy dashboards, and automates bed allocation rules, reducing admission time by 60%.",
@@ -7,6 +8,7 @@
     "industry": "Healthcare"
   },
   {
+    "id": 2,
     "title": "Legacy Claims Processing Modernization",
     "problem": "Claims adjusters relied on a 20-year-old mainframe system with slow batch updates and no mobile access, leading to 5–7 day processing cycles and frustrated customers.",
     "solution": "A progressive web app built with Mendix that integrates with the legacy mainframe via REST APIs, enabling real-time claim status updates, photo uploads, and automated approval workflows – cutting processing time to 24 hours.",
@@ -14,6 +16,7 @@
     "industry": "Insurance / Finance"
   },
   {
+    "id": 3,
     "title": "Warehouse Inventory & Order Picking Optimization",
     "problem": "Paper-based picking lists caused frequent stock mismatches, mis-shipments, and an average of 3 hours of daily manual data entry.",
     "solution": "A Mendix warehouse management companion app with barcode scanning, live inventory syncing, and voice-assisted picking instructions. Accuracy improved to 99.8% and labor costs dropped 25%.",
@@ -21,6 +24,7 @@
     "industry": "Logistics & Supply Chain"
   },
   {
+    "id": 4,
     "title": "Omni‑Channel Retail Loyalty Platform",
     "problem": "Siloed POS, e‑commerce, and in‑store systems prevented a unified view of customer purchases, making a cohesive loyalty program impossible.",
     "solution": "A Mendix-powered loyalty hub that aggregates transactions from all channels, issues real-time points, and triggers personalized offers via SMS or email. Member engagement increased 45% in six months.",
@@ -28,6 +32,7 @@
     "industry": "Retail"
   },
   {
+    "id": 5,
     "title": "Predictive Maintenance for Industrial Pumps",
     "problem": "Unexpected pump failures led to $2M annual downtime costs. Maintenance was schedule‑based, ignoring actual equipment health.",
     "solution": "A Mendix IoT monitoring application that ingests sensor data (vibration, temperature) from edge devices, applies simple rules to predict failures, and dispatches work orders to technicians automatically. Unplanned downtime reduced by 70%.",
@@ -35,6 +40,7 @@
     "industry": "Manufacturing"
   },
   {
+    "id": 6,
     "title": "Field Service Inspection & Reporting",
     "problem": "Field inspectors used paper checklists and manual photo attachments, resulting in illegible reports, delayed compliance submissions, and frequent data entry errors.",
     "solution": "A mobile Mendix app with offline‑first capability, guided inspection forms, and geotagged photos. Reports are auto‑generated as PDFs and synced to a central cloud repository. Report turnaround dropped from 5 days to 4 hours.",
@@ -42,6 +48,7 @@
     "industry": "Energy & Utilities"
   },
   {
+    "id": 7,
     "title": "Government Permit & License Workflow Automation",
     "problem": "Citizens and contractors waited weeks for building permits due to manual routing between desks, lost documents, and no online tracking.",
     "solution": "A Mendix citizen portal with drag‑and‑drop document upload, automated workflow routing based on permit type, and real‑time status notifications. Average permit approval reduced from 12 days to 2 days.",
@@ -49,6 +56,7 @@
     "industry": "Public Sector"
   },
   {
+    "id": 8,
     "title": "Employee Onboarding & IT Access Orchestration",
     "problem": "New hires waited up to a week for laptop provisioning, email accounts, and system access because HR, IT, and facilities used disconnected spreadsheets.",
     "solution": "A Mendix orchestration engine that triggers cross‑departmental tasks (e.g., create AD account, order laptop, assign desk) via APIs upon HR approval. Onboarding time reduced to 1 day, with zero manual follow‑ups.",
@@ -56,6 +64,7 @@
     "industry": "Corporate Services / HR"
   },
   {
+    "id": 9,
     "title": "Dynamic Loan Origination for Credit Unions",
     "problem": "Loan officers manually keyed data from scanned applications into a core banking system, causing high error rates and 3‑day underwriting delays.",
     "solution": "A Mendix loan origination app with OCR pre‑fill, credit bureau API integration, and a rule‑based decision engine. Loans under $50k are now approved in under 2 hours, and errors dropped by 90%.",
@@ -63,6 +72,7 @@
     "industry": "Banking"
   },
   {
+    "id": 10,
     "title": "Fleet Maintenance & Driver Safety Portal",
     "problem": "Maintenance records were scattered across spreadsheets and paper logs, leading to missed oil changes, tire rotations, and a rising number of roadside breakdowns.",
     "solution": "A Mendix fleet management solution that schedules preventive maintenance based on mileage or engine hours, tracks repair history, and includes a driver pre‑trip inspection module. Breakdowns fell 55% and maintenance costs dropped 18%.",
@@ -70,6 +80,7 @@
     "industry": "Transportation"
   },
   {
+    "id": 11,
     "title": "Clinical Trial Patient Recruitment & Monitoring",
     "problem": "Site coordinators struggled to screen, recruit, and track trial participants across 20 sites due to fragmented spreadsheets and manual eligibility checks.",
     "solution": "A Mendix‑based clinical trial portal that automates eligibility scoring (against protocol criteria), sends automated reminders, and provides a real‑time dashboard for patient enrollment. Recruitment time reduced by 40%.",
@@ -77,6 +88,7 @@
     "industry": "Life Sciences"
   },
   {
+    "id": 12,
     "title": "Inter‑Hotel Guest Experience & Upselling App",
     "problem": "Front desk teams had no easy way to see guest preferences (e.g., pillow type, dietary needs) or promote spa/dining offers across a 12‑hotel portfolio.",
     "solution": "A Mendix guest 360 application that pulls data from PMS, loyalty systems, and feedback surveys. It provides a unified guest profile and triggers targeted upselling messages via in‑app notifications. Upsell revenue increased 32% in one quarter.",
@@ -84,6 +96,7 @@
     "industry": "Hospitality"
   },
   {
+    "id": 13,
     "title": "Non‑Profit Grant Lifecycle Management",
     "problem": "Grant applications, approvals, and reporting were managed via email attachments and spreadsheets, causing lost proposals and late reporting to donors.",
     "solution": "A Mendix grant management system with a public application portal, anonymous peer‑review workflows, and automated reporting dashboards for funders. Processing time per grant fell from 6 weeks to 2 weeks.",
@@ -91,6 +104,7 @@
     "industry": "Non‑Profit"
   },
   {
+    "id": 14,
     "title": "Real‑Time Quality Control on Production Line",
     "problem": "Quality checks were performed manually every 4 hours; defects were often detected after large batches were already produced, causing scrap losses.",
     "solution": "A Mendix quality monitoring app connected to inline sensors (thickness, color, density). It alerts operators instantly when parameters drift out of spec, and logs every test result to a central SPC dashboard. Scrap reduced by 35%.",
@@ -98,6 +112,7 @@
     "industry": "Chemicals / Advanced Manufacturing"
   },
   {
+    "id": 15,
     "title": "Smart Campus Room & Resource Booking",
     "problem": "Students and staff competed for study rooms, lab equipment, and projectors using a paper sign‑up sheet, leading to double bookings and underutilized spaces.",
     "solution": "A Mendix campus resource scheduler with interactive floor plans, time‑slot locking, and automated waitlist notifications. Integration with campus ID cards enables door access. Room utilization improved by 50% and double bookings eliminated.",

@@ -7,6 +7,20 @@ const getCaseStudies = async () => {
   return data;
 };
 
+const openModal = (id) => {
+  const openButton = document.querySelector(`modal-open-${id}`);
+  const caseStudyModal = document.querySelector(`modal-${id}`);
+
+  caseStudyCard.addEventListener("click", () => caseStudyModal.showModal());
+};
+
+const closeModal = (id) => {
+  const modal = document.querySelector(`modal-${id}`);
+  const closeButton = document.querySelector(`modal-close-${id}`);
+
+  closeButton.addEventListener("click", () => modal.close());
+};
+
 const createCaseStudyElement = (caseStudy) => {
   const caseStudyElement = document.createElement("div");
   caseStudyElement.classList.add("card");
@@ -17,6 +31,26 @@ const createCaseStudyElement = (caseStudy) => {
   <p>${caseStudy.problem}</p>
   <small class="case-study-solution-label">Solution</small>
   <p>${caseStudy.solution}</p>
+  <p>
+    <small><strong>${caseStudy.company}</strong></small>
+  </p>
+  
+  <div>
+    <button id="modal-open-${caseStudy.id}" class="button button-primary">See details</button>
+  </div>
+  
+  <dialog id="modal-${caseStudy.id}">
+  <div><button id="modal-close-${caseStudy.id}">❌</button></div>
+    <div class="card dialog-card">
+      <h3>${caseStudy.title}</h3>
+      <small class="case-study-problem-label">Problem</small>
+      <p>${caseStudy.problem}</p>
+      <small class="case-study-solution-label">Solution</small>
+      <p>${caseStudy.solution}</p>
+      <br/>
+      <small><strong>${caseStudy.company}</strong></small>
+    </div>
+  </dialog>
   `;
   return caseStudyElement;
 };
@@ -26,6 +60,8 @@ const renderCaseStudies = async () => {
   caseStudies.map((caseStudy) => {
     const caseStudyElement = createCaseStudyElement(caseStudy);
     caseStudiesElement.appendChild(caseStudyElement);
+    openModal(caseStudy.id);
+    closeModal(caseStudy.id);
   });
 };
 
