@@ -313,6 +313,9 @@ html {
   color: var(--color-success);
 }
 
+.dialog-card {
+  width: 70vw;
+}
 /***************** CTA BANNER PRIMARY *****************/
 
 .cta-banner-primary {

@@ -29,6 +29,7 @@ const createPartnerCard = (partner) => {
 };
 
 const renderPartners = async () => {
+  if (!partnersElement) return;
   const partners = await getPartnersData();
   partners.map((partner) => {
     const partnerCard = createPartnerCard(partner);

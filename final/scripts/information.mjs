@@ -9,6 +9,8 @@ const emailElement = document.querySelector("#email");
 const descriptionElement = document.querySelector("#description");
 
 const renderFormResult = () => {
+  if (!nameElement || !emailElement || !descriptionElement) return;
+  
   nameElement.innerHTML = /*html */ `
     <p><strong>Name:</strong></p>
     <p>${paramName}</p>
