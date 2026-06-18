@@ -119,6 +119,10 @@
     gap: 1rem;
   }
 
+  .dialog-card {
+    max-width: 800px;
+  }
+
   /*********** CONTACT FORM *******************/
 
   .contact-hero {

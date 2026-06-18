@@ -11,13 +11,10 @@ const openModal = (id) => {
   const openButton = document.querySelector(`modal-open-${id}`);
   const caseStudyModal = document.querySelector(`modal-${id}`);
 
-  caseStudyCard.addEventListener("click", () => caseStudyModal.showModal());
+  openButton.addEventListener("click", () => caseStudyModal.showModal());
 };
 
 const closeModal = (id) => {
-  const modal = document.querySelector(`modal-${id}`);
-  const closeButton = document.querySelector(`modal-close-${id}`);
-
   closeButton.addEventListener("click", () => modal.close());
 };
 
@@ -40,8 +37,10 @@ const createCaseStudyElement = (caseStudy) => {
   </div>
   
   <dialog id="modal-${caseStudy.id}">
-  <div><button id="modal-close-${caseStudy.id}">❌</button></div>
     <div class="card dialog-card">
+      <div>
+        <button id="modal-close-${caseStudy.id}" class="button">❌</button>
+      </div>
       <h3>${caseStudy.title}</h3>
       <small class="case-study-problem-label">Problem</small>
       <p>${caseStudy.problem}</p>
@@ -57,11 +56,17 @@ const createCaseStudyElement = (caseStudy) => {
 
 const renderCaseStudies = async () => {
   const caseStudies = await getCaseStudies();
+
   caseStudies.map((caseStudy) => {
     const caseStudyElement = createCaseStudyElement(caseStudy);
     caseStudiesElement.appendChild(caseStudyElement);
-    openModal(caseStudy.id);
-    closeModal(caseStudy.id);
+
+    const modal = document.querySelector(`#modal-${caseStudy.id}`);
+    const closeButton = document.querySelector(`#modal-close-${caseStudy.id}`);
+    const openButton = document.querySelector(`#modal-open-${caseStudy.id}`);
+
+    openButton.addEventListener("click", () => modal.showModal());
+    closeButton.addEventListener("click", () => modal.close());
   });
 };
 
